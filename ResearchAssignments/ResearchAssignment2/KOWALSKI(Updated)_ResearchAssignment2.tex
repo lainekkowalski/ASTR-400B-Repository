@@ -1,0 +1,66 @@
+
+\documentclass[linenumbers,trackchanges]{aastex7}
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand\aastex{AAS\TeX}
+\newcommand\latex{La\TeX}
+
+\begin{document}
+
+\title{ResearchAssignment2}
+
+\author[orcid=0000-0000-0000-0001,sname='author']{Laine Kowalski}
+\affiliation{University of Arizona, Department of Astronomy and Steward Observatory}
+\email[show]{lainekowalski@arizona.edu}  
+
+\section{Introduction} 
+A galaxy's dark matter halo is an invisible, spherical cloud of dark matter that surrounds a galaxy, extending far beyond the visible stars, and is crucial for stabilizing the galaxy’s structure. Dark matter halos drive galaxy evolution by dominating the gravitational forces that govern a galaxy's orbital dynamics. Halos play a critical role in shaping the outcome of galactic mergers, such as for merging dark matter halo components of the Milky Way (MW) and Andromeda (M31) galaxies, which will eventually result in a single uniform halo.
+
+In terms of galaxy evolution, determining the post-merger physical attributes of dark matter halo particles within the combined MW-M31 system is critical for understanding how galaxies merge and behave dynamically. Examining specifically how the dark matter halo components interact and merge may also help to shed light on the nature of dark matter and its central role within galaxy formation, evolution, and internal galactic interactions. Studying how the dark matter halos interact through the merging process helps astronomers trace out and piece together the evolution and future properties of these two galaxies as they become one, which results in a better understanding of galaxy merger dynamics outside of our galactic local group as well. Further understanding of dark matter also has broader implications for particle, nuclear, and other areas of contemporary physics.
+
+\begin{figure}[htb!]
+\centering
+    \includegraphics[width=0.6\columnwidth]{DrakosBGraph.png}
+    \caption{Figure 5 from Ref.~\citep{Drakos2019B} shows the change in the scale radius, $r'_{-2}/r_{-2}$ as a function of the relative energy change, $\kappa$. The dotted lines are the expectations for self-similar evolution of the halo density profile. The solid black line is a fit to the data. The symbols are defined in the paper and represent different galaxy merger events where larger symbols refer to larger initial separations.\label{DrakosBGraph}}
+\end{figure}
+
+Regarding dark matter halo dynamics and its role in galaxy evolution, the literature states that dark matter halos are essential galactic structures that surround/host galaxies~\citep{Dubinski1992ApJ401}. Galaxies form at the center of dark matter halos, and the Extended Press-Schechter model suggests that dark matter halo development does not depend on their overall environment, so their evolution is consistent in galaxies across the universe~\citep{Frenk2012}. Even the smallest galaxies have dark matter halos as massive as the largest ones. This means that dark matter plays a significant role in shaping all galaxies, no matter their size or brightness~\citep{Wolf2010}. Homework4, for example, demonstrated that the original MW and M31 halo masses were around the same despite their differences in stellar mass components. Initial central galaxy formation affects the shape and mass of the surrounding dark matter halo because as baryons (normal matter) gather at the center of a halo, the halo’s shape becomes more symmetrical and less elongated~\citep{Abadi2010}. Dark matter halos form and grow in the universe, starting as small structures that stop expanding, collapse and then merge or gather more dark matter to become larger, in a process known as hierarchical growth~\citep{Frenk2012}. Merging halos of similar size, like with MW and M31, will usually mix their layers thoroughly~\citep{Frenk2012}. Also, the presence/quantity of dark matter in spiral galaxies observed using the Tully-Fisher relation, which relates halos and the galaxy’s rotational velocity,  proved that faster rotating galaxies have more massive dark matter halos as a galaxy’s outer regions are most affected by the presence of dark matter~\citep{Frenk2012}. Halos also become less concentrated and more spread out as we look further back in time (at higher redshift galaxies)~\citep{Bullock2001}. In terms of halo mergers, energy involved in the merger and the way halos spin around each other greatly influence the final shape and size of a merged halo. Final merged halos can be elongated or flattened, and the size can increase in a predictable way based on the energy and spin from before the merger~\citep{Drakos2019A}. Merger outcomes are heavily dictated by the internal energy of the merging system, with higher energy mergers producing more spread out remnants and lower energy producing more compact remnants, as shown in Fig.~\ref{DrakosBGraph} from Ref.~\citep{Drakos2019B}. Within the scale radius, the central galaxy density does not change in energetic mergers, but low energy mergers can increase the central density~\citep{Drakos2019B}. Dark matter also has implications for a galaxy’s angular momentum. Another study found that cold flow gas, gas accreted along cosmic filaments, enters a galaxy with much higher specific angular momentum compared to dark matter~\citep{Stewart2013}. This shows that dark matter components are more uniform than the varied distributed dynamic gaseous components~\citep{Stewart2013}. Finally, The shape and rotation of cosmic halos are influenced by the direction and strength of tidal forces, which primarily cause halos to spin smoothly along specific axes, helping to explain galaxy rotations and the evolution of the universe's structure~\citep{Dubinski1992ApJ401}. Overall, dark matter halos are the static framework for galaxy creation and are the ultimate determining factor for galaxy’s physical and dynamical attributes.
+
+
+Several open questions still exist regarding dark matter halo mergers, which are crucial for advancing our understanding of galaxy formation and structure. Key inquiries focus on how these mergers affect the halo mass function over time, the specific properties of dark matter that influence merger dynamics, and the detailed physical processes involved, including the transfer of angular momentum. Questions remain about the effects of baryonic matter and feedback mechanisms from star formation and black hole activity on these mergers. In addition, understanding the time it takes for the merged halos to reach an equilibrium state is a significant area of ongoing study. These questions highlight the complexity of halo mergers and their fundamental role in cosmological research.
+
+\section{The Proposal}
+\subsection{Proposal}
+This proposal addresses the topic of investigating the physical dynamics and attributes of the merged dark-matter halo components for the combined MW and M31 system, the two largest spiral galaxies within our local group, the merger of which will occur in around 4.5 billion years. Throughout this project, data from the~\citep{Besla2012} low resolution galaxy merger simulation will demonstrate the kinematics of the merged halo and how it is rotating, the velocity dispersion profile, the mass profile and how it compares to its Hernquist and Wolf mass profiles and the merged halo’s average angular momentum. The merged findings will be compared to values before, during and long after the merger to comprehend the full scope of how these galaxies’ dark matter halo properties and dynamics evolve overtime.
+
+\begin{figure}[htb!]
+\centering
+    \includegraphics[width=0.5\columnwidth]{PosSep.png}
+    \caption{Position separation graph from the OrbitCOM code in Homework6. This graph demonstrates that at around 6.7 Gyrs, the disk particles (ptype=2) are effectively merged after two close encounters.\label{PosSep}}
+\end{figure}
+
+\subsection{Methods}
+To approach these questions through code, I will first consider the OrbitCOM code to demonstrate position and velocity dispersion of dark matter halo particles (ptype=3) at the exact snapshot after the merger is initially complete (around Snapshot=440). According to the position and velocity separation graphs from this code, the merger seems to be complete after a few close encounters at around 6.7 Gyrs for disk particles. This can be replicated for halo particles (p-type=3), see Fig.~\ref{PosSep}. Based on these graphs, a criterion can be set to determine what a merged halo actually means. From what we already know, their first close encounter takes place at a center-of-mass separation of around 50 kpc and after a few more close encounters the center-of-mass separation tends towards zero. I will choose a somewhat arbitrary criterion (but consistent with typical choices in the literature) of considering the galaxies merged once the center-of-mass separation reaches 10 kpc and does not rise above that value again. I could also look at the velocity dispersion graphs to determine when they become the same. The curves would slowly approach each other and once the halos are merged, this line would remain persistent over time. To demonstrate the kinematics of the merged halo, I will use the exact merged snapshot, around 440, and snapshots post-merger, around 600-630, to figure out how the curve evolves over time and if the velocity distribution becomes static. I will base my solution on the MassAndVelocityProfiles code to obtain rotation curves. Depending on if these curves are steeper or not, I can see if the halo components speed up or slow down in comparison to before the merge. I would investigate to see if these halos settle into a pattern. This would also allow me to investigate the final spin direction of the merged halos. Therefore, this code would read both MW and M31 data files and then combine all dark matter halo particles post merger using a concatenation of arrays technique. Then, I could utilize the GalaxyMass code to determine the mass profiles of MW and M31 at the exact merger snapshot. These two will be combined through concatenation of arrays to determine the total halo mass component once merged. I could then compare my solution with a Hernquist profile and Wolf mass estimator (Eq.~\ref{Eq:Wolf}) to see how closely the combined component mass compares.
+
+\begin{equation}
+    \label{Eq:Wolf}
+    M_\mathrm{Wolf}\approx\frac{3}{G}\sigma^2 R^{1/2}
+\end{equation}
+
+Next, I would determine the final angular momentum (Eq.~\ref{Eq:AngMom}) of the combined halos. 
+
+\begin{equation}
+    \label{Eq:AngMom}
+    \mathbf{L} = \mathbf{r}\times\mathbf{p}
+\end{equation}
+
+If we know the masses, positions and velocities of every halo particle in the combined system, the final angular momentum could be determined through utilizing basic matrix techniques. I can then calculate the total angular momentum for the MW and M31 halo components by summing the angular momenta of all dark matter halo particles in each galaxy across the $x$, $y$, and $z$ axes, determining the magnitude of these vectors, and then comparing these values before and after their merger to verify if angular momentum is conserved. 
+
+\subsection{Hypothesis}
+My initial hypothesis for determining the time of the final encounter as it merges is that these dark matter halos are so large that they truly begin interacting earlier than the rest of the baryonic matter. My prediction is that a center-of-mass separation around 1-5 kpc, the halos are considered to be merged as they reach that threshold and never bounce up again based on the graphs. There is not really an agreed-upon way to determine what the exact time of the halo merger is, so setting a threshold/limit will help to determine this. Next, based on observing the classical dynamics of the system, the resulting orbital velocity would probably produce a highly chaotic velocity dispersion profile. Both galaxies are not rotating in the same direction and are not in the same plane, so this makes for a more complex 3-D interaction. I might expect the combined rotation curve to be noisy as they initially interact due to extreme tidal forces that will alter the rotation profile~\citep{Dubinski1992ApJ401}. For the mass profile of the merged halos, my hypothesis is that the summed component profiles and the Hernquist profile/Wolf mass estimator will not match-up because Hernquist and Wolf mass rely on equilibrium dynamics. Directly post-merger, the system is not in equilibrium, so I could examine the masses before, during, directly after and long after the merger to compare with the expectation that eventually the halo will reach equilibrium. Overall, there should be little to no loss of mass as it is a closed system. Because it is a closed system, I would also expect that the angular momentum would be conserved. During the merger, it is also possible that because satellite galaxy M33 is also realistically part of the system, there may be some noise on the position-time graph based on its interaction. Overall, my hypotheses reflect my initial research findings.
+
+
+\bibliography{main}
+\bibliographystyle{aasjournalv7}
+
+\end{document}
